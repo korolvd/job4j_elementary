@@ -46,4 +46,28 @@ public class PointTest {
         double rsl = a.distance(b);
         assertThat(rsl, closeTo(24.41, 0.01));
     }
+
+    @Test
+    public void when3d000to222then346() {
+        Point a = new Point(0, 0, 0);
+        Point b = new Point(2, 2, 2);
+        double rsl = a.distance3d(b);
+        assertThat(rsl, closeTo(3.46, 0.01));
+    }
+
+    @Test
+    public void when3d123to456then519() {
+        Point a = new Point(1, 2, 3);
+        Point b = new Point(4, 5, 6);
+        double rsl = a.distance3d(b);
+        assertThat(rsl, closeTo(5.19, 0.01));
+    }
+
+    @Test
+    public void when3d333to333then0() {
+        Point a = new Point(3, 3, 3);
+        Point b = new Point(3, 3, 3);
+        double rsl = a.distance3d(b);
+        assertThat(rsl, closeTo(0, 0.01));
+    }
 }
