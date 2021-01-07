@@ -1,8 +1,8 @@
 package ru.job4j.condition;
 
 public class Club {
-    public static void permission(boolean hasMoney, boolean beFriend) {
-        if (hasMoney || beFriend) {
+    public static void permission(boolean money, boolean friends) {
+        if (money || friends) {
             System.out.println("I can go to the club.");
         } else {
             System.out.println("I can't.");

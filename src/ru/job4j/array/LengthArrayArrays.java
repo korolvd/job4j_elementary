@@ -8,7 +8,6 @@ public class LengthArrayArrays {
                 {7, 8, 9},
                 {7, 8, 9, 80}
         };
-
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(
                     "Размер вложенного массива равен: " + numbers[i].length
